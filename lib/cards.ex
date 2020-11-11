@@ -5,8 +5,11 @@ defmodule Cards do
   end  
 
   def shuffle(deck) do
-    
+    Enum.shuffle(deck)
   end  
 
+  def contain?(deck, card) do
+    Enum.member?(deck, card)
+  end 
 
 end
