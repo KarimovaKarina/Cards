@@ -101,6 +101,8 @@ Cards <small class="app-vsn">(cards v0.1.0)</small>
 
   </div>
 
+    <div class="summary-synopsis"><p> Determines whether a deck contains a given card</p></div>
+
 </div>
 <div class="summary-row">
   <div class="summary-signature">
@@ -178,7 +180,13 @@ Functions
 
   <section class="docstring">
 
-
+<p> Determines whether a deck contains a given card</p><h2 id="contain?/2-examples" class="section-heading">
+  <a href="#contain?/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">deck</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Cards</span><span class="o">.</span><span class="n">create_deck</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Cards</span><span class="o">.</span><span class="n">contain?</span><span class="p" data-group-id="2861472081-1">(</span><span class="n">deck</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Ace of Spade&quot;</span><span class="p" data-group-id="2861472081-1">)</span><span class="w">
+</span><span class="no">true</span></code></pre>
   </section>
 </section>
 <section class="detail" id="create_deck/0">
@@ -234,10 +242,10 @@ Functions
   <a href="#deal/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex(1)&gt; </span><span class="n">deck</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Cards</span><span class="o">.</span><span class="n">create_deck</span><span class="w">
-</span><span class="gp unselectable">iex(2)&gt; </span><span class="p" data-group-id="9372229744-1">{</span><span class="n">hand</span><span class="p">,</span><span class="w"> </span><span class="n">deck</span><span class="p" data-group-id="9372229744-1">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Cards</span><span class="o">.</span><span class="n">deal</span><span class="p" data-group-id="9372229744-2">(</span><span class="n">deck</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p" data-group-id="9372229744-2">)</span><span class="w">
-</span><span class="gp unselectable">iex(3)&gt; </span><span class="n">hand</span><span class="w">
-</span><span class="p" data-group-id="9372229744-3">[</span><span class="s">&quot;Ace of Spade&quot;</span><span class="p" data-group-id="9372229744-3">]</span></code></pre>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">deck</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Cards</span><span class="o">.</span><span class="n">create_deck</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="0725363617-1">{</span><span class="n">hand</span><span class="p">,</span><span class="w"> </span><span class="n">deck</span><span class="p" data-group-id="0725363617-1">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Cards</span><span class="o">.</span><span class="n">deal</span><span class="p" data-group-id="0725363617-2">(</span><span class="n">deck</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p" data-group-id="0725363617-2">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="n">hand</span><span class="w">
+</span><span class="p" data-group-id="0725363617-3">[</span><span class="s">&quot;Ace of Spade&quot;</span><span class="p" data-group-id="0725363617-3">]</span></code></pre>
   </section>
 </section>
 <section class="detail" id="load/1">
