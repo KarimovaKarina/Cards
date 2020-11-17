@@ -108,6 +108,8 @@ Cards <small class="app-vsn">(cards v0.1.0)</small>
 
   </div>
 
+    <div class="summary-synopsis"><p> Returns a list of strings representing deck of playing cards </p></div>
+
 </div>
 <div class="summary-row">
   <div class="summary-signature">
@@ -121,6 +123,9 @@ Cards <small class="app-vsn">(cards v0.1.0)</small>
     <a href="#deal/2">deal(deck, hands_size)</a>
 
   </div>
+
+    <div class="summary-synopsis"><p> Divides a deck into a hand and the remainder of the deck.
+ The 'hand_size' argument indicates how many cards should be at the hand </p></div>
 
 </div>
 <div class="summary-row">
@@ -190,7 +195,7 @@ Functions
 
   <section class="docstring">
 
-
+<p> Returns a list of strings representing deck of playing cards </p>
   </section>
 </section>
 <section class="detail" id="create_hand/1">
@@ -224,7 +229,15 @@ Functions
 
   <section class="docstring">
 
-
+<p> Divides a deck into a hand and the remainder of the deck.
+ The 'hand_size' argument indicates how many cards should be at the hand </p><h2 id="deal/2-examples" class="section-heading">
+  <a href="#deal/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex(1)&gt; </span><span class="n">deck</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Cards</span><span class="o">.</span><span class="n">create_deck</span><span class="w">
+</span><span class="gp unselectable">iex(2)&gt; </span><span class="p" data-group-id="9372229744-1">{</span><span class="n">hand</span><span class="p">,</span><span class="w"> </span><span class="n">deck</span><span class="p" data-group-id="9372229744-1">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Cards</span><span class="o">.</span><span class="n">deal</span><span class="p" data-group-id="9372229744-2">(</span><span class="n">deck</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p" data-group-id="9372229744-2">)</span><span class="w">
+</span><span class="gp unselectable">iex(3)&gt; </span><span class="n">hand</span><span class="w">
+</span><span class="p" data-group-id="9372229744-3">[</span><span class="s">&quot;Ace of Spade&quot;</span><span class="p" data-group-id="9372229744-3">]</span></code></pre>
   </section>
 </section>
 <section class="detail" id="load/1">
